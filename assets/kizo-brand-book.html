@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kizo — Brand Identity Guide 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--sunrise:#E8834A;--amber:#D4793B;--clay:#B8614A;--warm-white:#FDF6F0;--cream:#F5EDE4;--sand:#E8DDD1;--charcoal:#2C2825;--warm-gray:#6B6360;--soft-gray:#9B9492;--white:#FFFFFF;--dusk:#C4856B;--morning:#F0C78E}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;background:var(--warm-white);color:var(--charcoal)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,246,240,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--sand);padding:0 40px;display:flex;align-items:center;height:56px;gap:32px}
+nav a{font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:8px 12px;color:var(--soft-gray);border-bottom:2px solid transparent;transition:all 0.2s}
+nav a:hover{color:var(--sunrise);border-bottom-color:var(--sunrise);font-weight:700}
+.sec{padding:80px 0;min-height:100vh;display:flex;align-items:center}
+.si{max-width:900px;margin:0 auto;padding:0 40px;width:100%}
+.bg-w{background:var(--warm-white)}.bg-c{background:var(--cream)}.bg-d{background:var(--charcoal)}
+.lb{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--soft-gray);margin-bottom:16px}
+.lb-dk{color:var(--dusk)}
+h2{font-family:'DM Serif Display',Georgia,serif;font-size:42px;font-weight:400;line-height:1.15;margin:0 0 32px 0}
+h2.dk{color:var(--white)}
+.bt{font-size:17px;line-height:1.75;color:var(--warm-gray);margin:0 0 20px 0}
+.serif{font-family:'DM Serif Display',Georgia,serif}
+.hero{background:var(--charcoal);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(232,131,74,0.07) 0%,transparent 50%)}
+.hero-c{text-align:center;position:relative;z-index:1}
+.hero h1{font-family:'DM Serif Display',Georgia,serif;font-size:96px;font-weight:400;color:var(--white);letter-spacing:-3px;margin:0 0 16px 0}
+.hero .tl{font-size:14px;letter-spacing:8px;text-transform:uppercase;color:var(--soft-gray)}
+.hero .dm{margin-top:20px;font-size:13px;color:var(--dusk);letter-spacing:1px}
+.hero .sub{margin-top:48px;font-size:14px;color:var(--dusk)}
+.kanji-solo{text-align:center;margin:32px 0 48px;padding:32px 0;border-top:1px solid var(--sand);border-bottom:1px solid var(--sand)}
+.kanji-ch{font-family:'Noto Serif JP',Georgia,serif;font-size:56px;color:var(--charcoal)}
+.kanji-rd{font-size:14px;color:var(--sunrise);font-weight:600;margin-top:10px;letter-spacing:3px}
+.kanji-mn{font-size:15px;color:var(--warm-gray);margin-top:6px}
+.quote{background:var(--cream);border-radius:20px;padding:40px 48px;margin:48px 0;border-left:4px solid var(--sunrise)}
+.quote p{font-family:'DM Serif Display',Georgia,serif;font-size:28px;color:var(--charcoal);line-height:1.5;font-style:italic}
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:16px}
+.val{padding:28px 0;border-top:2px solid var(--sand)}
+.val-t{font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--charcoal);margin-bottom:12px}
+.val-d{font-size:15px;color:var(--warm-gray);line-height:1.7}
+.origin{margin-top:48px;background:var(--charcoal);border-radius:20px;padding:40px 48px}
+.origin-lb{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--dusk);margin-bottom:16px}
+.origin-tx{font-size:15px;color:var(--sand);line-height:1.8}
+.logo-box{border-radius:24px;padding:56px 64px;display:flex;align-items:center;justify-content:center;margin-bottom:24px}
+.logo-box.w{background:var(--white);box-shadow:0 2px 24px rgba(0,0,0,0.04)}
+.logo-box.d{background:var(--charcoal)}
+.logo-box.h{padding:48px 32px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.dlb{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--soft-gray);margin-bottom:16px;font-weight:600}
+.row{display:flex;gap:24px;align-items:end;padding:24px 0}
+.lockup{display:flex;align-items:center;gap:16px}
+.lockup-t{font-family:'DM Serif Display',Georgia,serif;font-size:52px;letter-spacing:-1px;line-height:1}
+.lockup-tl{font-size:13px;letter-spacing:3.5px;text-transform:uppercase;color:var(--soft-gray);margin-top:2px}
+.stacked{display:flex;flex-direction:column;align-items:center;gap:8px}
+.anat{margin-top:48px;background:var(--warm-white);border-radius:20px;padding:40px}
+.anat-t{font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--charcoal);margin-bottom:20px}
+.anat-c{display:flex;gap:40px;align-items:center}
+.anat-items{display:flex;flex-direction:column;gap:12px}
+.anat-i{display:flex;gap:12px;align-items:flex-start}
+.anat-dot{width:12px;height:12px;border-radius:6px;margin-top:4px;flex-shrink:0}
+.anat-tx{font-size:14px;color:var(--warm-gray);line-height:1.6}
+.rules{margin-top:24px;background:var(--warm-white);border-radius:20px;padding:28px 40px}
+.rules-t{font-size:13px;font-weight:700;color:var(--charcoal);margin-bottom:12px}
+.rules-tx{font-size:14px;color:var(--warm-gray);line-height:1.8}
+.sw-row{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.sw{display:flex;flex-direction:column;align-items:center;gap:10px}
+.sw-c{width:90px;height:90px;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,0.08)}
+.sw-n{font-size:13px;font-weight:700;color:var(--charcoal)}
+.sw-h{font-size:11px;color:var(--soft-gray);letter-spacing:1px}
+.tb{border-top:2px solid var(--sand);padding-top:32px;margin-bottom:40px}
+.tb-lb{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--soft-gray);margin-bottom:16px}
+.tb-d{font-family:'DM Serif Display',Georgia,serif;font-size:56px;color:var(--charcoal);line-height:1.1}
+.tb-d.it{font-style:italic}
+.tb-b{font-size:32px;color:var(--charcoal);line-height:1.3;font-weight:300}
+.tb-note{font-size:13px;color:var(--soft-gray);margin-top:16px}
+.ts-r{display:flex;align-items:baseline;gap:24px;padding:12px 0;border-bottom:1px solid var(--sand)}
+.ts-lb{font-size:11px;color:var(--soft-gray);width:60px;flex-shrink:0;letter-spacing:1px}
+.ts-sz{font-size:11px;color:var(--soft-gray);margin-left:auto}
+.vg{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.v-no{background:#FFF0EE;border-radius:16px;padding:24px}
+.v-yes{background:#F0F7EE;border-radius:16px;padding:24px}
+.v-lb{font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;font-weight:700}
+.v-lb.r{color:var(--clay)}.v-lb.g{color:#5B8A4E}
+.v-tx{font-size:15px;color:var(--warm-gray);line-height:1.6}
+.pr-box{margin-top:48px;padding:32px 40px;background:var(--cream);border-radius:20px}
+.pr-t{font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--charcoal);margin-bottom:20px}
+.pr-r{display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--sand)}
+.pr-r:last-child{border-bottom:none}
+.pr-rl{font-size:14px;font-weight:700;color:var(--charcoal);min-width:280px}
+.pr-ex{font-size:14px;color:var(--warm-gray);font-style:italic}
+.pd-r{display:flex;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--sand)}
+.pd-n{font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--charcoal);min-width:200px}
+.pd-d{font-size:15px;color:var(--warm-gray)}
+.feat{margin-top:48px;background:var(--warm-white);border-radius:20px;padding:32px 40px}
+.feat+.feat{margin-top:24px}
+.feat-t{font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--charcoal);margin-bottom:16px}
+.feat-tx{font-size:15px;color:var(--warm-gray);line-height:1.8}
+.wild{display:flex;flex-direction:column;gap:40px;margin-top:40px}
+.wild-lb{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--dusk);margin-bottom:16px}
+.bb{border-radius:24px;padding:64px 48px;text-align:center}
+.bb.w{background:var(--warm-white)}.bb.c{background:var(--cream)}
+.bb-lb{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--soft-gray);margin-bottom:32px}
+.bb-ln{font-family:'DM Serif Display',Georgia,serif;font-size:36px;color:var(--charcoal);line-height:1.4}
+.bb-ln.acc{color:var(--sunrise)}
+.notif{background:var(--warm-white);border-radius:16px;padding:16px 20px;display:flex;gap:14px;align-items:flex-start;max-width:380px}
+.notif-t{font-size:14px;font-weight:700;color:var(--charcoal)}
+.notif-tx{font-size:13px;color:var(--warm-gray);line-height:1.5}
+.rcpt{background:var(--warm-white);border-radius:12px;padding:20px 24px;max-width:300px;text-align:center}
+.rcpt-th{font-size:12px;color:var(--soft-gray);margin-bottom:12px}
+.rcpt-pw{font-size:10px;color:var(--soft-gray);margin-top:4px}
+.rcpt-pw span{font-family:'DM Serif Display',Georgia,serif;font-size:11px;color:var(--warm-gray)}
+.onb{background:var(--warm-white);border-radius:20px;padding:48px 40px;text-align:center;max-width:420px}
+.onb h3{font-family:'DM Serif Display',Georgia,serif;font-size:28px;color:var(--charcoal);margin:24px 0 12px}
+.onb p{font-size:15px;color:var(--warm-gray);line-height:1.7}
+.onb-btn{margin-top:32px;background:var(--sunrise);color:var(--white);font-family:'Nunito Sans',sans-serif;font-size:14px;font-weight:600;padding:14px 32px;border-radius:12px;display:inline-block;letter-spacing:1px;border:none;cursor:pointer}
+.err{background:var(--warm-white);border-radius:16px;padding:24px 28px;max-width:400px}
+.err-row{display:flex;gap:12px;align-items:flex-start}
+.err-dot{width:8px;height:8px;border-radius:4px;background:var(--sunrise);margin-top:7px;flex-shrink:0}
+.err-t{font-size:15px;font-weight:700;color:var(--charcoal);margin-bottom:6px}
+.err-tx{font-size:14px;color:var(--warm-gray);line-height:1.6}
+.err-lk{color:var(--sunrise);font-weight:600;text-decoration:none}
+.closing{margin-top:80px;text-align:center;padding-bottom:40px}
+.closing-ln{width:1px;height:60px;background:var(--dusk);margin:0 auto 40px;opacity:0.3}
+.closing-q{font-family:'DM Serif Display',Georgia,serif;font-size:32px;color:var(--white);line-height:1.5;font-style:italic;max-width:500px;margin:0 auto}
+.closing-cta{margin-top:24px;font-family:'DM Serif Display',Georgia,serif;font-size:32px;color:var(--sunrise)}
+.closing-dm{margin-top:12px;font-size:15px;color:var(--dusk)}
+.ctr{display:flex;justify-content:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <svg width="32" height="32" viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#2C2825"/><circle cx="30" cy="23" r="6.5" fill="#E8834A" opacity="0.6"/><path d="M12 38 C12 29,19 22,26 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M48 38 C48 29,41 22,34 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+  <div style="display:flex;gap:8px">
+    <a href="#story">Story</a><a href="#logo">Logo</a><a href="#color">Color</a><a href="#type">Typography</a><a href="#voice">Voice</a><a href="#product">Product</a><a href="#world">In the Wild</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-c">
+    <div style="margin-bottom:40px">
+      <svg width="120" height="120" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.45"/><path d="M10 40 C10 30,18 22,26 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </div>
+    <h1>kizo</h1>
+    <div class="tl">SIMPLY GIVEN</div>
+    <div class="dm">getkizo.com</div>
+    <div class="sub">Brand Identity Guide — 2026</div>
+  </div>
+</section>
+
+<!-- 01 STORY -->
+<section id="story" class="sec bg-w">
+<div class="si">
+  <div class="lb">01 — Brand Story</div>
+  <h2>A gift, freely given.</h2>
+
+  <div class="kanji-solo">
+    <div class="kanji-ch">寄贈</div>
+    <div class="kanji-rd">KIZŌ</div>
+    <div class="kanji-mn">a gift — a donation — to present something freely</div>
+  </div>
+
+  <p class="bt">Kizo (寄贈, kizō) means to give something as a gift — to present it freely, with no expectation of return. That's the entire philosophy in a single word. Kizo is free and open-source software, built for small business owners, given away because they deserve tools as good as what the Fortune 500 has — and shouldn't have to pay a SaaS tax to get them.</p>
+  <p class="bt">Every restaurant owner paying $300/month for a POS. Every salon owner juggling five disconnected apps. Every mechanic doing books at midnight because the software costs more than it saves. Kizo exists because those people got a raw deal, and because for the first time in history, one person with AI can build what used to take a team of fifty.</p>
+  <p class="bt">So we built it. And we're giving it away.</p>
+  <p class="bt">The name was found, not invented — a happy typo during a late-night working session. The best gifts arrive like that: unplanned, unexpected, and immediately right.</p>
+
+  <div class="quote"><p>"You make the food. You cut the hair. You fix the car. We built the operating system. It's yours. Take it."</p></div>
+
+  <h2>Brand values</h2>
+  <div class="vals">
+    <div class="val"><div class="val-t">Free means free</div><div class="val-d">Not freemium. Not free-until-we-raise-prices. Not free-but-we-sell-your-data. Free and open-source, forever. The code is yours to read, run, modify, and share.</div></div>
+    <div class="val"><div class="val-t">Make it simple</div><div class="val-d">If the owner needs a manual, we failed. Every screen, every notification, every report should be obvious in three seconds. Open-source doesn't have to mean ugly or complicated.</div></div>
+    <div class="val"><div class="val-t">Smart, not clever</div><div class="val-d">We use AI to save time and money — but we never make the owner feel stupid. The intelligence is in the background. The simplicity is in the foreground.</div></div>
+    <div class="val"><div class="val-t">Your business, your data</div><div class="val-d">Local-first. Your data lives on your hardware. No cloud lock-in. No extraction. No selling your customers to your competitors. You own everything, because it was always yours.</div></div>
+  </div>
+
+  <div class="origin">
+    <div class="origin-lb">ORIGIN STORY</div>
+    <div class="origin-tx">Kizo was born from a restaurant kitchen. Its creator spent 20 years running a Thai café in Washington State while building software for Fortune 500 companies — and watched as the tools available to small businesses got worse and more expensive every year. When AI coding agents made it possible for one person to build what once took a team, he built the operating system his own restaurant always needed — a POS, an ordering platform, a delivery system, an analytics engine — in days instead of months. Then he gave it away. Because the best tools shouldn't be locked behind a monthly fee.</div>
+  </div>
+
+  <!-- FOSS commitment block -->
+  <div style="margin-top:24px;background:var(--cream);border-radius:20px;padding:40px 48px">
+    <div style="font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--charcoal);margin-bottom:16px">The open-source commitment</div>
+    <div style="font-size:15px;color:var(--warm-gray);line-height:1.8">
+      Kizo is licensed under a permissive open-source license. The entire codebase — POS, ordering, inventory, accounting, analytics — is available for anyone to inspect, modify, and deploy. There is no "community edition" vs. "enterprise edition." There is no feature gating. There is no phone-home telemetry. The software is the gift. The business model, if there ever is one, will be services — setup help, custom development, managed hosting — never the software itself.
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 02 LOGO -->
+<section id="logo" class="sec bg-c">
+<div class="si">
+  <div class="lb">02 — Logo</div>
+  <h2>Simply given.</h2>
+  <p class="bt">The Kizo mark is three elements: two hands and a gift. Nothing else. Two open hands reach toward a warm orb — something precious, offered freely. It's the most reduced expression of the brand's core idea: here, take this, it's yours.</p>
+  <p class="bt">The warm circle is the software itself — the thing we built and are giving away. The hands are the act of giving — open, unhesitating, no strings attached.</p>
+
+  <div style="margin-top:48px"><div class="dlb">PRIMARY — HORIZONTAL LOCKUP</div>
+  <div class="logo-box w">
+    <div class="lockup">
+      <svg width="80" height="80" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <div><div class="lockup-t" style="color:var(--charcoal)">kizo</div><div class="lockup-tl">simply given</div></div>
+    </div>
+  </div></div>
+
+  <div class="dlb">ON DARK</div>
+  <div class="logo-box d">
+    <div class="lockup">
+      <svg width="80" height="80" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <div><div class="lockup-t" style="color:#FDF6F0">kizo</div><div class="lockup-tl">simply given</div></div>
+    </div>
+  </div>
+
+  <div class="dlb">STACKED VARIANT</div>
+  <div class="g2">
+    <div class="logo-box w h">
+      <div class="stacked">
+        <svg width="80" height="80" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <div class="lockup-t" style="font-size:40px;color:var(--charcoal)">kizo</div>
+        <div class="lockup-tl">simply given</div>
+      </div>
+    </div>
+    <div class="logo-box d h">
+      <div class="stacked">
+        <svg width="80" height="80" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <div class="lockup-t" style="font-size:40px;color:#FDF6F0">kizo</div>
+        <div class="lockup-tl">simply given</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dlb">MARK ONLY</div>
+  <div class="row">
+    <svg width="80" height="80" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+    <svg width="48" height="48" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+    <svg width="36" height="36" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+    <svg width="24" height="24" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </div>
+
+  <div class="dlb">APP ICON</div>
+  <div class="row">
+    <svg width="64" height="64" viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#2C2825"/><circle cx="30" cy="23" r="6.5" fill="#E8834A" opacity="0.6"/><path d="M12 38 C12 29,19 22,26 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M48 38 C48 29,41 22,34 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+    <svg width="48" height="48" viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#2C2825"/><circle cx="30" cy="23" r="6.5" fill="#E8834A" opacity="0.6"/><path d="M12 38 C12 29,19 22,26 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M48 38 C48 29,41 22,34 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+    <svg width="36" height="36" viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#2C2825"/><circle cx="30" cy="23" r="6.5" fill="#E8834A" opacity="0.6"/><path d="M12 38 C12 29,19 22,26 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M48 38 C48 29,41 22,34 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+    <svg width="24" height="24" viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#2C2825"/><circle cx="30" cy="23" r="6.5" fill="#E8834A" opacity="0.6"/><path d="M12 38 C12 29,19 22,26 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M48 38 C48 29,41 22,34 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+  </div>
+
+  <div class="anat">
+    <div class="anat-t">Mark anatomy</div>
+    <div class="anat-c">
+      <svg width="120" height="120" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <div class="anat-items">
+        <div class="anat-i"><div class="anat-dot" style="background:var(--sunrise);opacity:0.55"></div><div class="anat-tx">The gift — the software itself. Free, open-source, yours to keep. Always warm.</div></div>
+        <div class="anat-i"><div class="anat-dot" style="background:var(--charcoal)"></div><div class="anat-tx">Left hand — the act of giving. Open, reaching out, no strings.</div></div>
+        <div class="anat-i"><div class="anat-dot" style="background:var(--charcoal)"></div><div class="anat-tx">Right hand — the act of giving. Together, they offer the gift freely.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rules">
+    <div class="rules-t">Clear space &amp; usage rules</div>
+    <div class="rules-tx">Maintain clear space equal to the diameter of the gift circle on all sides. Never rotate, stretch, recolor the gift circle with non-brand colors, or place on busy backgrounds. The mark and wordmark should never be separated in the primary lockup. The mark and app icon may be used independently where the brand is already established.</div>
+  </div>
+</div>
+</section>
+
+<!-- 03 COLOR -->
+<section id="color" class="sec bg-w">
+<div class="si">
+  <div class="lb">03 — Color Palette</div>
+  <h2>Warm mornings, steady ground.</h2>
+  <p class="bt">The Kizo palette is built around warmth — ambers and clays for energy, warm whites and creams for space, deep charcoal for grounding. No cold blues. No corporate grays. This is software that feels like a place you want to be.</p>
+  <div style="margin-top:48px">
+    <div class="dlb">PRIMARY</div>
+    <div class="sw-row">
+      <div class="sw"><div class="sw-c" style="background:var(--sunrise)"></div><div class="sw-n">Sunrise</div><div class="sw-h">#E8834A</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--charcoal)"></div><div class="sw-n">Charcoal</div><div class="sw-h">#2C2825</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--warm-white);border:1px solid var(--sand)"></div><div class="sw-n">Warm White</div><div class="sw-h">#FDF6F0</div></div>
+    </div>
+    <div class="dlb">SUPPORTING</div>
+    <div class="sw-row">
+      <div class="sw"><div class="sw-c" style="background:var(--amber)"></div><div class="sw-n">Amber</div><div class="sw-h">#D4793B</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--clay)"></div><div class="sw-n">Clay</div><div class="sw-h">#B8614A</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--cream);border:1px solid var(--sand)"></div><div class="sw-n">Cream</div><div class="sw-h">#F5EDE4</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--sand)"></div><div class="sw-n">Sand</div><div class="sw-h">#E8DDD1</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--morning)"></div><div class="sw-n">Morning</div><div class="sw-h">#F0C78E</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--dusk)"></div><div class="sw-n">Dusk</div><div class="sw-h">#C4856B</div></div>
+    </div>
+    <div class="dlb">TEXT</div>
+    <div class="sw-row">
+      <div class="sw"><div class="sw-c" style="background:var(--charcoal)"></div><div class="sw-n">Primary Text</div><div class="sw-h">#2C2825</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--warm-gray)"></div><div class="sw-n">Body Text</div><div class="sw-h">#6B6360</div></div>
+      <div class="sw"><div class="sw-c" style="background:var(--soft-gray)"></div><div class="sw-n">Secondary</div><div class="sw-h">#9B9492</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 04 TYPOGRAPHY -->
+<section id="type" class="sec bg-c">
+<div class="si">
+  <div class="lb">04 — Typography</div>
+  <h2>Two voices, one tone.</h2>
+  <p class="bt">DM Serif Display for warmth and character. Nunito Sans for clarity and friendliness. Together they say: "we're real, we're professional, and we speak your language."</p>
+  <div style="margin-top:48px">
+    <div class="tb"><div class="tb-lb">DISPLAY — DM SERIF DISPLAY</div><div class="tb-d">The quick brown fox</div><div class="tb-d it">jumps over the lazy dog</div><div class="tb-note">Headlines, feature names, brand statements, the wordmark</div></div>
+    <div class="tb"><div class="tb-lb">BODY — NUNITO SANS</div><div class="tb-b">The quick brown fox jumps over the lazy dog</div><div class="tb-note" style="max-width:600px;font-size:17px;color:var(--warm-gray);line-height:1.7">Light (300) for body, Regular (400) for UI, Semibold (600) for emphasis, Bold (700) for labels.</div></div>
+    <div class="tb"><div class="tb-lb">TYPE SCALE</div>
+      <div class="ts-r"><span class="ts-lb">H1</span><span class="serif" style="font-size:42px">Simply given</span><span class="ts-sz">42px</span></div>
+      <div class="ts-r"><span class="ts-lb">H2</span><span class="serif" style="font-size:28px">Simply given</span><span class="ts-sz">28px</span></div>
+      <div class="ts-r"><span class="ts-lb">H3</span><span class="serif" style="font-size:22px">Simply given</span><span class="ts-sz">22px</span></div>
+      <div class="ts-r"><span class="ts-lb">Body</span><span style="font-size:17px">Simply given</span><span class="ts-sz">17px</span></div>
+      <div class="ts-r"><span class="ts-lb">Small</span><span style="font-size:14px">Simply given</span><span class="ts-sz">14px</span></div>
+      <div class="ts-r"><span class="ts-lb">Label</span><span style="font-size:11px;letter-spacing:3px;text-transform:uppercase">Simply given</span><span class="ts-sz">11px</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 05 VOICE -->
+<section id="voice" class="sec bg-w">
+<div class="si">
+  <div class="lb">05 — Brand Voice</div>
+  <h2>Talk like a neighbor, not a vendor.</h2>
+  <p class="bt">Kizo speaks in first person plural — "we." We never say "the platform" or "the system." We talk like a person who happens to be really good at running the back office. Warm, clear, honest. We celebrate the owner's craft, never our own cleverness.</p>
+  <div style="margin-top:40px">
+    <div class="vg"><div class="v-no"><div class="v-lb r">NOT THIS</div><div class="v-tx" style="font-style:italic">Our automated reconciliation engine processes multi-channel settlement data in real-time, providing actionable financial insights.</div></div><div class="v-yes"><div class="v-lb g">THIS</div><div class="v-tx">We match every sale to every deposit, every day. If something doesn't add up, we'll tell you exactly what's off.</div></div></div>
+    <div class="vg"><div class="v-no"><div class="v-lb r">NOT THIS</div><div class="v-tx" style="font-style:italic">Error 4012: Payment gateway connection timeout. Please verify your merchant account credentials and retry.</div></div><div class="v-yes"><div class="v-lb g">THIS</div><div class="v-tx">The card reader lost its connection — this usually fixes itself in about 30 seconds. If not, try turning it off and back on.</div></div></div>
+    <div class="vg"><div class="v-no"><div class="v-lb r">NOT THIS</div><div class="v-tx" style="font-style:italic">Leverage our advanced customer retention analytics to identify at-risk segments and deploy targeted re-engagement campaigns.</div></div><div class="v-yes"><div class="v-lb g">THIS</div><div class="v-tx">Sarah hasn't been in for 6 weeks — she usually comes every two. Want to send her a welcome-back offer?</div></div></div>
+    <div class="vg"><div class="v-no"><div class="v-lb r">NOT THIS</div><div class="v-tx" style="font-style:italic">Optimize your labor allocation with AI-driven demand forecasting and predictive scheduling algorithms.</div></div><div class="v-yes"><div class="v-lb g">THIS</div><div class="v-tx">Based on the last few months, Thursday nights need one more person in the kitchen. Want to adjust the schedule?</div></div></div>
+  </div>
+  <div class="pr-box">
+    <div class="pr-t">Voice principles</div>
+    <div class="pr-r"><span class="pr-rl">Say "we", not "the system"</span><span class="pr-ex">We noticed your food cost went up 3% this week.</span></div>
+    <div class="pr-r"><span class="pr-rl">Name the person, not the segment</span><span class="pr-ex">Mrs. Johnson's gift card has $12 left.</span></div>
+    <div class="pr-r"><span class="pr-rl">Tell them what to do, not what happened</span><span class="pr-ex">The printer needs reconnecting — tap here to fix it.</span></div>
+    <div class="pr-r"><span class="pr-rl">Celebrate their craft</span><span class="pr-ex">142 five-star reviews this year. Your customers love what you do.</span></div>
+    <div class="pr-r"><span class="pr-rl">Be honest about limits</span><span class="pr-ex">We can't tell exactly why — but here are the three most likely reasons.</span></div>
+  </div>
+</div>
+</section>
+
+<!-- 06 PRODUCT -->
+<section id="product" class="sec bg-c">
+<div class="si">
+  <div class="lb">06 — Product Language</div>
+  <h2>Every feature has a human name.</h2>
+  <p class="bt">Kizo product names avoid jargon. Features are named for what they do in the owner's world. The pattern: Kizo + a single, common noun. If you have to explain the name, pick a different name.</p>
+  <div style="margin-top:32px">
+    <div class="pd-r"><span class="pd-n">Kizo Register</span><span class="pd-d">The point of sale — ring up customers, split checks, handle tips, print receipts.</span></div>
+    <div class="pd-r"><span class="pd-n">Kizo Orders</span><span class="pd-d">Online ordering, delivery management, and marketplace sync — all in one place.</span></div>
+    <div class="pd-r"><span class="pd-n">Kizo Books</span><span class="pd-d">Accounting, reconciliation, and financial reporting. Where the money picture lives.</span></div>
+    <div class="pd-r"><span class="pd-n">Kizo Team</span><span class="pd-d">Scheduling, time tracking, payroll prep, and labor cost visibility.</span></div>
+    <div class="pd-r"><span class="pd-n">Kizo Stock</span><span class="pd-d">Inventory tracking, reorder alerts, vendor management, waste monitoring.</span></div>
+    <div class="pd-r"><span class="pd-n">Kizo Guests</span><span class="pd-d">Customer profiles, loyalty, reviews, and the marketing that brings people back.</span></div>
+    <div class="pd-r"><span class="pd-n">Kizo Pulse</span><span class="pd-d">The daily briefing — what happened yesterday, what matters today, what needs attention.</span></div>
+    <div class="pd-r"><span class="pd-n">Kizo Help</span><span class="pd-d">Support, troubleshooting, and the person you call when something breaks.</span></div>
+  </div>
+  <div class="feat"><div class="feat-t">The Daily Briefing — "Kizo Pulse"</div><div class="feat-tx">The signature product moment. Every morning, when the owner opens Kizo, they see Pulse: yesterday's sales, today's schedule, inventory alerts, new reviews, cash position, and anything that needs a decision. The loading animation is the Kizo mark — two hands offering the warm orb, the gift arriving for another day.</div></div>
+  <div class="feat"><div class="feat-t">Naming conventions</div><div class="feat-tx">Product names are always "Kizo" + a single, common English noun. Never an acronym. Never a portmanteau. Never a word the owner wouldn't use at their own dinner table. If you have to explain the name, pick a different name.</div></div>
+</div>
+</section>
+
+<!-- 07 IN THE WILD -->
+<section id="world" class="sec bg-d">
+<div class="si">
+  <div class="lb label-dk">07 — In the Wild</div>
+  <h2 class="dk">How it shows up.</h2>
+  <div class="wild">
+
+    <div class="bb w">
+      <div class="bb-lb">BILLBOARD</div>
+      <div class="bb-ln">You opened this place for a reason.</div>
+      <div class="bb-ln" style="margin-bottom:8px">It wasn't bookkeeping.</div>
+      <div class="bb-ln acc" style="margin-bottom:32px">This one's on us.</div>
+      <div class="ctr"><div class="lockup">
+        <svg width="48" height="48" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <div><div class="serif" style="font-size:32px">kizo</div><div class="lockup-tl">simply given</div></div>
+      </div></div>
+    </div>
+
+    <div class="bb c">
+      <div class="bb-lb">BILLBOARD VARIATION</div>
+      <div class="bb-ln">Free POS. Free ordering. Free inventory.</div>
+      <div class="bb-ln">Free scheduling. Free analytics.</div>
+      <div class="bb-ln acc" style="margin-bottom:32px">Free. As in actually free.</div>
+      <div class="ctr"><div class="lockup">
+        <svg width="40" height="40" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <div class="serif" style="font-size:26px">kizo</div>
+      </div></div>
+    </div>
+
+    <div><div class="wild-lb">PUSH NOTIFICATION</div>
+    <div class="notif">
+      <svg width="36" height="36" viewBox="0 0 60 60" style="flex-shrink:0"><rect width="60" height="60" rx="14" fill="#2C2825"/><circle cx="30" cy="23" r="6.5" fill="#E8834A" opacity="0.6"/><path d="M12 38 C12 29,19 22,26 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M48 38 C48 29,41 22,34 23.5" stroke="#FDF6F0" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+      <div><div class="notif-t">Kizo Pulse</div><div class="notif-tx">Good morning — yesterday's sales were up 12% vs. last Tuesday. 3 new reviews (all 5-star). You're low on to-go lids.</div></div>
+    </div></div>
+
+    <div><div class="wild-lb">RECEIPT FOOTER</div>
+    <div class="rcpt">
+      <div class="rcpt-th">Thank you for supporting a local business</div>
+      <div class="ctr"><svg width="20" height="20" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#9B9492" opacity="0.3"/><path d="M10 40 C10 30,18 22,26 24" stroke="#9B9492" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#9B9492" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+      <div class="rcpt-pw">Powered by <span>kizo</span> — free &amp; open-source</div>
+    </div></div>
+
+    <div><div class="wild-lb">FIRST-TIME ONBOARDING</div>
+    <div class="onb">
+      <div class="ctr"><svg width="64" height="64" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+      <h3>Welcome to Kizo.</h3>
+      <p>This is yours — free, forever, no catch. Let's get your business set up. It usually takes about 15 minutes.</p>
+      <button class="onb-btn">Let's get started</button>
+    </div></div>
+
+    <div><div class="wild-lb">GITHUB README BADGE</div>
+    <div style="background:var(--warm-white);border-radius:16px;padding:24px 28px;max-width:480px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+        <svg width="28" height="28" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.55"/><path d="M10 40 C10 30,18 22,26 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#2C2825" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <span class="serif" style="font-size:20px">kizo</span>
+        <span style="font-size:11px;background:var(--sunrise);color:white;padding:3px 10px;border-radius:20px;font-weight:600;letter-spacing:1px">FOSS</span>
+      </div>
+      <div style="font-size:14px;color:var(--warm-gray);line-height:1.6">The small business operating system. Free and open-source.<br>POS · Orders · Inventory · Scheduling · Accounting · Analytics</div>
+      <div style="margin-top:16px;display:flex;gap:8px">
+        <span style="font-size:11px;background:var(--sand);color:var(--warm-gray);padding:4px 10px;border-radius:6px">MIT License</span>
+        <span style="font-size:11px;background:var(--sand);color:var(--warm-gray);padding:4px 10px;border-radius:6px">Local-first</span>
+        <span style="font-size:11px;background:var(--sand);color:var(--warm-gray);padding:4px 10px;border-radius:6px">Runs on a Pi</span>
+      </div>
+    </div></div>
+
+    <div><div class="wild-lb">WHEN THINGS BREAK</div>
+    <div class="err"><div class="err-row">
+      <div class="err-dot"></div>
+      <div><div class="err-t">Kitchen printer disconnected</div><div class="err-tx">This usually fixes itself in about 30 seconds. If not, try turning it off and back on. Still stuck? <a class="err-lk" href="#">Call Kizo Help</a></div></div>
+    </div></div></div>
+
+  </div>
+
+  <div class="closing">
+    <div class="closing-ln"></div>
+    <div class="ctr" style="margin-bottom:24px"><svg width="48" height="48" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="24" r="7" fill="#E8834A" opacity="0.45"/><path d="M10 40 C10 30,18 22,26 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/><path d="M50 40 C50 30,42 22,34 24" stroke="#FDF6F0" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+    <div class="closing-q">The best tools shouldn't cost a fortune. They should be a gift.</div>
+    <div class="closing-cta">Kizo. Simply given.</div>
+    <div class="closing-dm">getkizo.com</div>
+  </div>
+</div>
+</section>
+
+</body>
+</html>
